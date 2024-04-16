@@ -1,11 +1,12 @@
+Feature: Test Login functionality
+  I want to use this feature file to test the login functionality
 
-Feature: Test Login functionality 
-  I want to use this template for my feature file
 
+@login
   Scenario: Test using valid creds
     Given I open chrome browser
     And I visit the environment
     When I enter username
-    And I enter pwd
-    And I click on the login button 
+    Then I enter pwd
+    And I click on the login button
     And I should see Home page
